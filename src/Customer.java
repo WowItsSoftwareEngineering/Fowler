@@ -25,7 +25,7 @@ class Customer {
             double thisAmount = 0;
             Rental each = (Rental) enum_rentals.nextElement();
             //determine amounts for each line
-            thisAmount = each.amountFor();
+            thisAmount = each.getCharge();
             // Calculate frequentRenterPoints
             frequentRenterPoints += getFrequentRenterPoints(each);
             //show figures for this rental
